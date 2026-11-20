@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de Battlefield 1 para recién llegados</title>
+  <meta name="description" content="Guía en español de Battlefield 1: cómo jugar, clases, mejores armas, vehículos y easter eggs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación principal -->
+  <header class="site-header">
+    <a class="site-header__brand" href="#inicio">Guía BF1</a>
+    <button class="site-header__toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menú</button>
+    <nav class="main-nav" id="mainNav" aria-label="Secciones de la guía">
+      <a href="#que-es">Qué es</a>
+      <a href="#como-jugar">Cómo jugar</a>
+      <a href="#modos">Modos</a>
+      <a href="#clases">Clases</a>
+      <a href="#armas">Armas</a>
+      <a href="#vehiculos">Vehículos</a>
+      <a href="#secretos">Secretos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portada -->
+    <section class="cover" id="inicio">
+      <div class="cover__main">
+        <div class="cover__text">
+          <p class="cover__kicker">Manual de campo para reclutas</p>
+          <h1 class="cover__title">Battlefield 1</h1>
+          <p class="cover__lead">Todo lo que necesitas saber antes de saltar a tu primera trinchera: cómo se juega, qué clase elegir, qué armas y vehículos rinden más y dónde están los secretos que casi nadie encuentra.</p>
+          <a class="button" href="#como-jugar">Empezar el entrenamiento</a>
+        </div>
+        <figure class="cover__feature">
+          <img src="assets/images/hero/imagen-soladosencombate.png" alt="Soldados avanzando en combate durante la Primera Guerra Mundial" width="800" height="600">
+        </figure>
+      </div>
+      <ul class="map-strip" aria-label="Escenarios del juego">
+        <li><img src="assets/images/hero/imagen-mapa1.png" alt="Escenario de batalla de Battlefield 1, mapa 1" loading="lazy"></li>
+        <li><img src="assets/images/hero/imagen-mapa2.png" alt="Escenario de batalla de Battlefield 1, mapa 2" loading="lazy"></li>
+        <li><img src="assets/images/hero/imagen-mapa3.png" alt="Escenario de batalla de Battlefield 1, mapa 3" loading="lazy"></li>
+      </ul>
+      <div class="barbed-wire" aria-hidden="true"></div>
+    </section>
+
+    <!-- Introducción breve -->
+    <section class="section" id="que-es">
+      <h2>Qué es Battlefield 1</h2>
+      <div class="section__columns">
+        <p>Es un shooter en primera persona de guerra total ambientado en la Primera Guerra Mundial. Lo creó DICE y lo publicó Electronic Arts en octubre de 2016. Su sello: partidas enormes, mapas destructibles, tanques, aviones, caballos y gigantescos vehículos blindados llamados Behemoths.</p>
+        <dl class="fact-sheet">
+          <div><dt>Lanzamiento</dt><dd>Octubre de 2016</dd></div>
+          <div><dt>Desarrolla</dt><dd>DICE (motor Frostbite 3)</dd></div>
+          <div><dt>Plataformas</dt><dd>PC, PS4 y Xbox One</dd></div>
+          <div><dt>Ambientación</dt><dd>Primera Guerra Mundial</dd></div>
+          <div><dt>Jugadores</dt><dd>Hasta 64 en línea</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Cómo jugar -->
+    <section class="section" id="como-jugar">
+      <h2>Cómo jugar: lo básico</h2>
+      <p class="section__intro">Si nunca has jugado un Battlefield, estas cinco ideas te ahorran las primeras horas de confusión.</p>
+      <ol class="tips-list" id="basicTips"></ol>
+    </section>
+
+    <!-- Modos de juego -->
+    <section class="section" id="modos">
+      <h2>Modos de juego</h2>
+      <p class="section__intro">Pulsa un modo para ver cómo funciona.</p>
+      <div id="modesList" class="modes"></div>
+    </section>
+
+    <!-- Clases -->
+    <section class="section" id="clases">
+      <h2>Clases: elige tu papel</h2>
+      <p class="section__intro">Puedes cambiar de clase cada vez que reapareces. Prueba todas antes de decidir.</p>
+      <div class="class-grid" id="classGrid"></div>
+    </section>
+
+    <!-- Armas -->
+    <section class="section" id="armas">
+      <h2>Mejores armas por clase</h2>
+      <p class="section__intro">Elige una clase para ver qué armas suelen recomendarse. El equilibrio cambió con los parches, así que úsalas como punto de partida.</p>
+      <div class="tabs" id="weaponTabs" role="tablist" aria-label="Clase de arma"></div>
+      <div class="weapon-panel" id="weaponPanel" role="tabpanel" aria-live="polite"></div>
+    </section>
+
+    <!-- Vehículos -->
+    <section class="section" id="vehiculos">
+      <h2>Vehículos y Behemoths</h2>
+      <p class="section__intro">Los vehículos deciden partidas. Estos son los que conviene dominar primero.</p>
+      <div class="vehicle-list" id="vehicleList"></div>
+    </section>
+
+    <!-- Easter eggs -->
+    <section class="section" id="secretos">
+      <h2>Easter eggs y secretos famosos</h2>
+      <p class="section__intro">DICE esconde bromas y misterios en sus mapas. Estos son de los más conocidos.</p>
+      <ul class="secret-list" id="secretList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Guía no oficial hecha por Erbet Gomez Bohorquez. Battlefield 1 es marca de Electronic Arts y DICE. Los datos de armas pueden variar según el parche.</p>
+  </footer>
+
+  <!-- Modal de Galería de Imágenes -->
+  <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">
+    <button class="lightbox__close" aria-label="Cerrar galería">×</button>
+    <button class="lightbox__prev" aria-label="Imagen anterior">❮</button>
+    <img id="lightbox__image" class="lightbox__image" src="" alt="Vista previa">
+    <button class="lightbox__next" aria-label="Siguiente imagen">❯</button>
+    <div id="lightbox__caption" class="lightbox__caption"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
